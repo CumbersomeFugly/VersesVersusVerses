@@ -1,3 +1,3 @@
 Rails.application.routes.draw do
-  root 'verses/vote'
+  root 'verses#vote'
 end

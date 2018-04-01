@@ -1,0 +1,2 @@
+class VerseController < ApplicationController
+end
