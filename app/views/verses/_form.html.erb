@@ -1,0 +1,47 @@
+<%= form_with(model: verse, local: true) do |form| %>
+  <% if verse.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(verse.errors.count, "error") %> prohibited this verse from being saved:</h2>
+
+      <ul>
+      <% verse.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :lyrics %>
+    <%= form.text_field :lyrics, id: :verse_lyrics %>
+  </div>
+
+  <div class="field">
+    <%= form.label :song %>
+    <%= form.text_field :song, id: :verse_song %>
+  </div>
+
+  <div class="field">
+    <%= form.label :artist %>
+    <%= form.text_field :artist, id: :verse_artist %>
+  </div>
+
+  <div class="field">
+    <%= form.label :album %>
+    <%= form.text_field :album, id: :verse_album %>
+  </div>
+
+  <div class="field">
+    <%= form.label :year %>
+    <%= form.text_field :year, id: :verse_year %>
+  </div>
+
+  <div class="field">
+    <%= form.label :score %>
+    <%= form.text_field :score, id: :verse_score %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -1,13 +1,5 @@
 Rails.application.routes.draw do
-  get 'verses/index'
+  resources :verses
 
-  get 'verses/show'
-
-  get 'verses/create'
-
-  get 'verses/update'
-
-  get 'verses/destroy'
-
-  root 'verses#vote'
+  root 'verses#index'
 end

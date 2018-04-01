@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Lyrics:</strong>
+  <%= @verse.lyrics %>
+</p>
+
+<p>
+  <strong>Song:</strong>
+  <%= @verse.song %>
+</p>
+
+<p>
+  <strong>Artist:</strong>
+  <%= @verse.artist %>
+</p>
+
+<p>
+  <strong>Album:</strong>
+  <%= @verse.album %>
+</p>
+
+<p>
+  <strong>Year:</strong>
+  <%= @verse.year %>
+</p>
+
+<p>
+  <strong>Score:</strong>
+  <%= @verse.score %>
+</p>
+
+<%= link_to 'Edit', edit_verse_path(@verse) %> |
+<%= link_to 'Back', verses_path %>
