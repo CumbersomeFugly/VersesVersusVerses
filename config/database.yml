@@ -4,6 +4,5 @@ development:
   pool: 10
   host: localhost
   port: 5432
-  username: postgres
-  password: freeBaseData
+  username: k
 

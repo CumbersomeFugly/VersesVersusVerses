@@ -1,7 +1,6 @@
 class Verse < ApplicationRecord
   def adjust_score(adjustment) 
-    score += adjustment
+    self.score += adjustment
     save
   end
 end
-
